@@ -9,32 +9,32 @@ class Directory extends Component {
       sections: [
         {
           title: "hats",
-          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+          imageUrl: "https://i.ibb.co/YbccwdP/joshua-coleman-y-VRLC75-Ma8-unsplash.jpg",
           id: 1,
           linkUrl: "hats"
         },
         {
           title: "jackets",
-          imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+          imageUrl: "https://i.ibb.co/4Yks2x8/amanda-vick-oh-Wf6-Yuz-OQk-unsplash.jpg",
           id: 2,
           linkUrl: "shop/jackets"
         },
         {
           title: "sneakers",
-          imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+          imageUrl: "https://i.ibb.co/vwykvrt/giorgio-trovato-b9-Kdwn-KWh-Rk-unsplash.jpg",
           id: 3,
           linkUrl: "shop/sneakers"
         },
         {
           title: "womens",
-          imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+          imageUrl: "https://i.ibb.co/jWh7t0c/woman-wearing-yellow-jacket-3622616.jpg",
           size: "large",
           id: 4,
           linkUrl: "shop/womens"
         },
         {
           title: "mens",
-          imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+          imageUrl: "https://i.ibb.co/vQ8jF0z/man-wearing-red-sweatshirt-and-black-pants-leaning-on-the-845434.jpg",
           size: "large",
           id: 5,
           linkUrl: "shop/mens"
