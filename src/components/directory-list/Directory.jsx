@@ -11,7 +11,7 @@ class Directory extends Component {
           title: "hats",
           imageUrl: "https://i.ibb.co/YbccwdP/joshua-coleman-y-VRLC75-Ma8-unsplash.jpg",
           id: 1,
-          linkUrl: "hats"
+          linkUrl: "shop/hats"
         },
         {
           title: "jackets",
