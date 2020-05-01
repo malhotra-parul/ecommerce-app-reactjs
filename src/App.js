@@ -5,7 +5,7 @@ import ShopPage from "./pages/shop/shop";
 import Header from "./components/header/header";
 import SignInAndSignUpPage from "./pages/signin-signup/SignInAndSignUpPage.jsx";
 import './App.css';
-import { auth } from "./firebase/firebase.utils";
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 //imported auth from firebase so as to know if a used is signed in or out inside of our app
 
 class App extends Component {
@@ -25,9 +25,8 @@ class App extends Component {
   unsubscribeFromAuth = null;
 
   componentDidMount(){
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-      this.setState({currentUser: user});
-      console.log(user);
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async user =>  {
+      createUserProfileDocument(user);
     });
   }
 

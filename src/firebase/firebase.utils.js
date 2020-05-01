@@ -14,6 +14,28 @@ const config = {
 
   firebase.initializeApp(config);
 
+  export const createUserProfileDocument = async (userAuth, additionalData)=>{
+      if(!userAuth) return;
+      const userRef = firestore.doc(`users/${userAuth.uid}`); //.doc method returns queryRef
+      const snapshot = await userRef.get(); //using queryRef we can get querySnapshot
+      if(!snapshot.exists){
+        const { displayName, email } = userAuth;
+        const createdAt = new Date();
+        try{
+          //if user is not in db, we save him to db now!
+          await userRef.set({
+            displayName,
+            email,
+            createdAt,
+            ...additionalData
+          });
+        }catch(error){
+            console.log("Error creating user", error.message);
+        }
+      }
+      return userRef;
+  };
+
   //exporting auth and firestore
   export const auth = firebase.auth();
   export const firestore = firebase.firestore();
