@@ -18,7 +18,7 @@ class App extends Component {
     };
   }
 
-  //we are going to use subscription methods on auth to update state of current user when user
+  //we are going to use subscription methods to set up a listener to update state of current user when user
   //signs in and signs out.
   unsubscribeFromAuth = null;
 
